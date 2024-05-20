@@ -48,6 +48,7 @@ static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
 static void QueueAnimTiles_General_Waterfall(u16);
 static void QueueAnimTiles_General_LandWaterEdge(u16);
+static void QueueAnimTiles_General_MartSign(u16);
 static void QueueAnimTiles_Building_TVTurnedOn(u16);
 static void QueueAnimTiles_Rustboro_WindyWater(u16, u8);
 static void QueueAnimTiles_Rustboro_Fountain(u16);
@@ -82,8 +83,8 @@ const u16 tileset_anims_space_0[16] = {};
 const u16 *const gTilesetAnims_General_Flower[] = {
     gTilesetAnims_General_Flower_Frame0,
     gTilesetAnims_General_Flower_Frame1,
-    gTilesetAnims_General_Flower_Frame0,
-    gTilesetAnims_General_Flower_Frame2
+    gTilesetAnims_General_Flower_Frame2,
+    gTilesetAnims_General_Flower_Frame1
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
@@ -113,6 +114,7 @@ const u16 gTilesetAnims_General_SandWaterEdge_Frame3[] = INCBIN_U16("data/tilese
 const u16 gTilesetAnims_General_SandWaterEdge_Frame4[] = INCBIN_U16("data/tilesets/primary/general/anim/sand_water_edge/4.4bpp");
 const u16 gTilesetAnims_General_SandWaterEdge_Frame5[] = INCBIN_U16("data/tilesets/primary/general/anim/sand_water_edge/5.4bpp");
 const u16 gTilesetAnims_General_SandWaterEdge_Frame6[] = INCBIN_U16("data/tilesets/primary/general/anim/sand_water_edge/6.4bpp");
+const u16 gTilesetAnims_General_SandWaterEdge_Frame7[] = INCBIN_U16("data/tilesets/primary/general/anim/sand_water_edge/7.4bpp");
 
 const u16 *const gTilesetAnims_General_SandWaterEdge[] = {
     gTilesetAnims_General_SandWaterEdge_Frame0,
@@ -122,19 +124,21 @@ const u16 *const gTilesetAnims_General_SandWaterEdge[] = {
     gTilesetAnims_General_SandWaterEdge_Frame4,
     gTilesetAnims_General_SandWaterEdge_Frame5,
     gTilesetAnims_General_SandWaterEdge_Frame6,
-    gTilesetAnims_General_SandWaterEdge_Frame0
+    gTilesetAnims_General_SandWaterEdge_Frame7
 };
 
 const u16 gTilesetAnims_General_Waterfall_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/waterfall/0.4bpp");
 const u16 gTilesetAnims_General_Waterfall_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/waterfall/1.4bpp");
 const u16 gTilesetAnims_General_Waterfall_Frame2[] = INCBIN_U16("data/tilesets/primary/general/anim/waterfall/2.4bpp");
 const u16 gTilesetAnims_General_Waterfall_Frame3[] = INCBIN_U16("data/tilesets/primary/general/anim/waterfall/3.4bpp");
+const u16 gTilesetAnims_General_Waterfall_Frame4[] = INCBIN_U16("data/tilesets/primary/general/anim/waterfall/4.4bpp");
 
 const u16 *const gTilesetAnims_General_Waterfall[] = {
     gTilesetAnims_General_Waterfall_Frame0,
     gTilesetAnims_General_Waterfall_Frame1,
     gTilesetAnims_General_Waterfall_Frame2,
-    gTilesetAnims_General_Waterfall_Frame3
+    gTilesetAnims_General_Waterfall_Frame3,
+    gTilesetAnims_General_Waterfall_Frame4
 };
 
 const u16 gTilesetAnims_General_LandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/land_water_edge/0.4bpp");
@@ -147,6 +151,26 @@ const u16 *const gTilesetAnims_General_LandWaterEdge[] = {
     gTilesetAnims_General_LandWaterEdge_Frame1,
     gTilesetAnims_General_LandWaterEdge_Frame2,
     gTilesetAnims_General_LandWaterEdge_Frame3
+};
+
+const u16 gTilesetAnims_General_MartSign_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/0.4bpp");
+const u16 gTilesetAnims_General_MartSign_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/1.4bpp");
+const u16 gTilesetAnims_General_MartSign_Frame2[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/2.4bpp");
+const u16 gTilesetAnims_General_MartSign_Frame3[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/3.4bpp");
+const u16 gTilesetAnims_General_MartSign_Frame4[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/4.4bpp");
+const u16 gTilesetAnims_General_MartSign_Frame5[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/5.4bpp");
+const u16 gTilesetAnims_General_MartSign_Frame6[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/6.4bpp");
+const u16 gTilesetAnims_General_MartSign_Frame7[] = INCBIN_U16("data/tilesets/primary/general/anim/mart_sign/7.4bpp");
+
+const u16 *const gTilesetAnims_General_shop_sign[] = {
+    gTilesetAnims_General_MartSign_Frame0,
+    gTilesetAnims_General_MartSign_Frame1,
+    gTilesetAnims_General_MartSign_Frame2,
+    gTilesetAnims_General_MartSign_Frame3,
+    gTilesetAnims_General_MartSign_Frame4,
+    gTilesetAnims_General_MartSign_Frame5,
+    gTilesetAnims_General_MartSign_Frame6,
+    gTilesetAnims_General_MartSign_Frame7
 };
 
 const u16 gTilesetAnims_Lavaridge_Steam_Frame0[] = INCBIN_U16("data/tilesets/secondary/lavaridge/anim/steam/0.4bpp");
@@ -641,6 +665,8 @@ static void TilesetAnim_General(u16 timer)
         QueueAnimTiles_General_Waterfall(timer / 16);
     if (timer % 16 == 4)
         QueueAnimTiles_General_LandWaterEdge(timer / 16);
+    if (timer % 16 == 5)
+        QueueAnimTiles_General_MartSign(timer / 16);
 }
 
 static void TilesetAnim_Building(u16 timer)
@@ -652,25 +678,31 @@ static void TilesetAnim_Building(u16 timer)
 static void QueueAnimTiles_General_Flower(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Flower);
-    AppendTilesetAnimToBuffer(gTilesetAnims_General_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(508)), 4 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(64)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_General_Water(u16 timer)
 {
     u8 i = timer % ARRAY_COUNT(gTilesetAnims_General_Water);
-    AppendTilesetAnimToBuffer(gTilesetAnims_General_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(432)), 30 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(288)), 64 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_General_SandWaterEdge(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_SandWaterEdge);
-    AppendTilesetAnimToBuffer(gTilesetAnims_General_SandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(464)), 10 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_SandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(362)), 32 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_General_Waterfall(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Waterfall);
-    AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(352)), 10 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_General_MartSign(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_MartSign);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_MartSign[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(410)), 20 * TILE_SIZE_4BPP);
 }
 
 void InitTilesetAnim_Petalburg(void)
